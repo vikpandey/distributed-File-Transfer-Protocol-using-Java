@@ -1,0 +1,26 @@
+form.form-horizontal
+  fieldset
+    // Form Name
+    legend Form Name
+    // Button Drop Down
+    .form-group
+      label.col-md-4.control-label(for='buttondropdown') test
+      .col-md-4
+        .input-group
+          input#buttondropdown.form-control(name='buttondropdown', placeholder='placeholder', type='text')
+          .input-group-btn
+            button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+              | Action
+              span.caret
+            ul.dropdown-menu.pull-right
+              li
+                a(href='#') All
+              li
+                a(href='#') Clothing
+              li
+                a(href='#') Electronics
+    // Button
+    .form-group
+      label.col-md-4.control-label(for='search') Single Button
+      .col-md-4
+        button#search.btn.btn-primary(name='search') search

@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+      <form method='post', action='/'>
+      <select name = "categories">
+      <option value = "All"> All </option>
+      <option value = "Clothing"> Clothing </option>
+      <option value = "Electronics"> Electronics </option>
+      <option value = "Home"> Home </option>
+      <option value = "Cellphone"> Cellphone </option>
+      </select>
+      <label for = "Search"> Search </label>
+      <input type ="text" name ="Searchbox"><br>
+      <button type="submit"> Submit</button>
+      </form>
